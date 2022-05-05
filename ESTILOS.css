@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('wallhaven-47ywjy.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+nav {
+    position: fixed;
+    height: 100px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #161616e6;
+    width: 100%;
+}
+
+.logo {
+    background: url(img/chefdog.png) no-repeat 75% 75%;
+    background-size: contain;
+    width: 250px;
+    height: 100px;
+    float: left;
+}
+.logo img{
+    height: 100%;
+}
+h1{
+    color: rgb(246, 249, 249);
+    text-align: center;
+    font-family: 'Boogaloo', cursive;
+    font-size: 800%;
+}
+h2{
+    color: ghostwhite;
+    font-family: 'Boogaloo', cursive;
+    margin: 2%;
+    padding: 2%;
+    font-size: 500%;
+}
+h3{
+    color: ghostwhite;
+    text-align: center;
+    font-family: 'Boogaloo', cursive;
+    font-size: 300%;
+}
+p{
+    color: ghostwhite;
+    font-family: 'Amatic SC', cursive;
+    font-size: 180%;
+}
+
+.menu{
+    overflow: hidden;
+    position:absolute;
+    right: 70px;
+}
+.menu a{
+    color: rgb(223, 220, 220);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    font-family: 'Amatic SC', cursive;
+    font-size: 200%;
+}
+
+.menu a:hover{
+    color: hsl(24, 57%, 75%);
+}
+.cont{
+   padding: 10%;
+}
+input[type="search"],
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid rgb(20, 19, 19);
+  border-radius: 6px;
+  resize: horizontal;
+  background-color: rgb(13, 13, 13);
+  color: white;
+  }
+input[type='button']{
+    background-color: rgb(250, 250, 250);
+    color: rgb(16, 14, 14);
+    padding: 6px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    font-size: 15px;
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+footer{
+    background-color: rgb(11, 11, 11);
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    color: ghostwhite;
+}
+
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #f38b40;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: rgb(251, 251, 251);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(50px auto);
+    padding: 10px;
+    margin:10px;
+  }
+  .container div {
+    background: #0f0f0f;
+    padding: 1em;
+  }
+  .container div:hover {
+    border: 2px solid rgb(239, 237, 243);
+  }
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #0f0f0f;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(239, 237, 243);
+      }
+  
+      .menu a {
+        float: none;
+        width: 100%;
+        margin: 2px;
+        padding: 6px 16px;
+        font-size: 16px;
+      }
+      nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f0efede6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        background-color: #e7c4ab;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 200px;
+    }
+    h1{
+        font-size: 500%;
+    }
+    h2{
+        font-size: 300%;
+    }
+    h3{
+        font-size: 200%;
+    }
+    P{
+        font-size: 140%;
+    }
+    footer{
+        padding: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+    input[type="search"],
+    textarea {
+        width: 40%;
+        padding: 6px;
+        border-radius: 6px;
+        resize: horizontal;
+        float: center;
+        }
+    input[type='button']{
+        padding: 8px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: center;
+        font-size: 10px;
+      
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #0f0f0f;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(238, 229, 229);
+      }
+      .menu a {
+        float: none;
+        width: 100%;
+        margin: 2px;
+        padding: 6px 16px;
+        font-size: 16px;
+      }
+      nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f0efede6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        background-color: #e7c4ab;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 200px;
+    }
+    h1{
+        font-size: 600%;
+    }
+    h2{
+        font-size: 300%;
+    }
+    h3{
+        font-size: 200%;
+    }
+    P{
+        font-size: 180%;
+    }
+  }
+  @media only screen and (max-width: 550px){
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f0efede6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        background-color: #e7c4ab;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 200px;
+    }
+    h1{
+        font-size: 450%;
+    }
+    h2{
+        font-size: 300%;
+    }
+    h3{
+        font-size: 200%;
+    }
+    P{
+        font-size: 150%;
+    }
+    footer{
+        padding: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+    input[type="search"],
+    textarea {
+        width: 50%;
+        padding: 6px;
+        border-radius: 6px;
+        resize: horizontal;
+        float: center;
+        }
+    input[type='button']{
+        padding: 8px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: center;
+        font-size: 10px;
+      
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(50px auto);
+        padding: 10px;
+        margin:10px;
+      }
+      .container div {
+        background: #0f0f0f;
+        padding: 1em;
+      }
+      .container div:hover {
+        border: 2px solid rgb(239, 237, 243);
+      }
+}
